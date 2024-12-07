@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lobster&family=Niconne&family=Outfit:wght@100..900&family=Parkinsans:wght@300..800&family=Passion+One:wght@400;700;900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to right bottom,
+    rgb(151, 14, 73),
+    rgb(18, 7, 58)
+  );
+  padding: 20px;
+  gap: 20px;
+  flex-direction: column;
+}
+main h1 {
+  color: rgb(82, 81, 81);
+  font-size: 1.2rem;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+main h1 i {
+  color: rgb(255, 0, 0);
+  font-size: 1.7rem;
+}
+main .card {
+  background-color: rgb(253, 253, 253);
+  width: 350px;
+  height: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  contain: content;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 5px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  color: black;
+  box-shadow: 2px -2px 10px rgba(0, 0, 0, 0.089);
+  transform: rotateX(21deg) rotateY(2deg);
+  &:hover {
+    transform: rotateX(0deg);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.089);
+  }
+}
+.card input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 100px;
+  border: 0;
+  color: rgb(97, 97, 97);
+  background-color: rgba(140, 69, 69, 0);
+}
+.Input-button {
+  width: 100%;
+  background-color: #e6e5e5;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+li div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+input[type="checkbox"] {
+  appearance: none; /* Remove default checkbox styling */
+  -webkit-appearance: none; /* For Safari compatibility */
+  -moz-appearance: none; /* For Firefox compatibility */
+  border: 2px solid #e5e3e3; /* Checkbox border color */
+  border-radius: 50%; /* Make it rounded */
+  outline: none; /* Remove the outline */
+  cursor: pointer; /* Add pointer cursor */
+  transition: background 0.3s ease, border-color 0.3s ease;
+  width: 10px;
+}
+
+/* Style when checkbox is checked */
+input[type="checkbox"]:checked {
+  background-color: #d63d3d; /* Change background when checked */
+  border-color: #db3a3a; /* Change border color when checked */
+  position: relative;
+  width: 10px;
+}
+
+/* Add a checkmark */
+input[type="checkbox"]:checked::after {
+  content: "\2713"; /* Unicode for checkmark */
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card button {
+  cursor: pointer;
+  width: 70px;
+  padding: 10px;
+  border-radius: 100px;
+  border: 0;
+  background-color: rgb(255, 74, 74);
+  color: white;
+  &:hover {
+    background-color: rgb(245, 36, 36);
+  }
+  &:active {
+    transform: scale(1.02);
+  }
+}
+li p {
+  color: rgb(61, 61, 61);
+  text-wrap: wrap;
+}
+
+.card span {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 10px;
+  gap: 20%;
+  text-wrap: nowrap;
+}
+@media screen and (max-width: 380px) {
+  main .card {
+    width: 90%;
+    height: 60%;
+  }
+  .card input {
+    width: 78%;
+    padding: 5px;
+    border-radius: 100px;
+    border: 0;
+    color: rgb(97, 97, 97);
+    font-size: 10px;
+  }
+  .card button {
+    width: 40px;
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  ul li {
+    padding: 5px;
+    font-size: 9px;
+  }
+  input[type="checkbox"] {
+    height: 11px;
+  }
+  input[type="checkbox"]:checked::after {
+    font-size: 6px;
+  }
+
+  input[type="checkbox"] {
+    width: 10px;
+  }
+}
