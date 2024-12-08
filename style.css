@@ -96,7 +96,7 @@ input[type="checkbox"] {
   appearance: none; /* Remove default checkbox styling */
   -webkit-appearance: none; /* For Safari compatibility */
   -moz-appearance: none; /* For Firefox compatibility */
-  border: 2px solid #e5e3e3; /* Checkbox border color */
+  border: 2px solid rgb(166, 166, 166); /* Checkbox border color */
   border-radius: 50%; /* Make it rounded */
   outline: none; /* Remove the outline */
   cursor: pointer; /* Add pointer cursor */
@@ -107,7 +107,7 @@ input[type="checkbox"] {
 /* Style when checkbox is checked */
 input[type="checkbox"]:checked {
   background-color: #d63d3d; /* Change background when checked */
-  border-color: #db3a3a; /* Change border color when checked */
+  border-color: rgb(166, 166, 166); /* Change border color when checked */
   position: relative;
   width: 10px;
 }
